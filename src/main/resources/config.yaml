@@ -1,0 +1,21 @@
+#HttpClient RequestConfig设置
+http-client:
+  proxy:
+    host:
+    port:
+  socket-timeout: 5000
+  connect-timeout: 60000
+  connection-request-timeout: 5000
+#失败重跑最大次数
+max-retry-count: 3
+#extentreports配置文件路径
+extentreports-config-path: 'src/main/resources/extentreports.xml'
+launcher:
+  demo:
+    - 'demo1'
+    - 'demo2'
+launcher-path: 'src/test/resources/launcher_demo.json'
+locator-path:
+  demo: 'src/test/resources/locator_demo.json'
+case-path:
+  demo: 'src/test/resources/testcase_demo.json'
